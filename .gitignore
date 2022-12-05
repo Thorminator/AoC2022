@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IntelliJ
+AdventOfCode2022.iml
+.idea
