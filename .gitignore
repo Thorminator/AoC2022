@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # IntelliJ
-AdventOfCode2022.iml
+*.iml
 .idea
