@@ -41,7 +41,7 @@ def find_directories_of_size_in(directory):
     res = []
     for file in directory.files:
         if isinstance(file, Directory):
-            if file.get_size() <= 100000:
+            if file.get_size() >= 4359867:
                 res.append(file)
             res = res + find_directories_of_size_in(file)
     return res
@@ -65,5 +65,6 @@ if __name__ == '__main__':
             elif command == 'ls':
                 index = parse_ls_lines(lines, index, current_dir)
         index += 1
-    
-    print(sum([f.get_size() for f in find_directories_of_size_in(root)]))
+
+    files = [f for f in find_directories_of_size_in(root)]
+    print(min([f.get_size() for f in files]))
