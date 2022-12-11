@@ -31,5 +31,6 @@ def main():
         x = completion_function(x, arg)
     print(signal_strength_sum)
 
+
 if __name__ == '__main__':
     main()
